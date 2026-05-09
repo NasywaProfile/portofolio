@@ -96,40 +96,52 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 5%;
-    max-width: var(--container-width);
-    margin: 0 auto;
+    padding: 8px 8px 8px 30px;
+    max-width: 500px; /* Modern narrow floating bar */
+    margin: 20px auto;
     position: sticky;
-    top: 0;
-    background-color: rgba(250, 249, 246, 0.85);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    top: 20px;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 100px;
     z-index: 1000;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.06);
 }
 
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 30px;
+    gap: 25px;
 }
 
 .nav-links a {
     text-decoration: none;
     color: var(--text-secondary);
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     font-weight: 500;
     transition: var(--transition);
 }
 
 .nav-links a:hover, .nav-links a.active {
     color: var(--text-primary);
-    font-weight: 600;
 }
 
 .nav-contact.btn-primary {
     padding: 10px 25px;
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     color: white;
+    background-color: #2d3436; /* Dark button like the image */
+    border-radius: 100px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.nav-contact.btn-primary:hover {
+    background-color: #000;
+    transform: scale(1.05);
 }
 
 /* Hero Section */
