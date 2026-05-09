@@ -795,6 +795,9 @@ body {
 
 .footer-bottom-dark p {
     margin: 0;
+    font-size: 9px !important;
+    color: #3a3a3a !important;
+    letter-spacing: 2px;
 }
 
 .footer-links {
