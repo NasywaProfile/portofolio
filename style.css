@@ -715,11 +715,11 @@ body {
     align-items: center;
     gap: 8px;
     background: rgba(255, 255, 255, 0.05);
-    padding: 8px 16px;
+    padding: 5px 12px;
     border-radius: 100px;
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     color: #a0a0a0;
-    margin-bottom: 30px;
+    margin-bottom: 16px;
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -733,25 +733,26 @@ body {
 
 .footer-dark h2 {
     font-family: var(--font-serif);
-    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-size: clamp(1.3rem, 3vw, 2rem);
     line-height: 1.2;
-    margin-bottom: 1rem;
+    margin-bottom: 0.6rem;
     color: #ffffff;
 }
 
 .footer-dark p {
     color: #a0a0a0;
-    font-size: 1.15rem;
-    max-width: 600px;
-    margin: 0 auto 40px;
+    font-size: 0.9rem;
+    max-width: 500px;
+    margin: 0 auto 20px;
 }
 
 .footer-dark .btn-primary {
     background-color: #ffffff;
     color: #1a1a1a;
-    padding: 18px 45px;
+    padding: 12px 32px;
     border-radius: 100px;
     font-weight: 600;
+    font-size: 0.9rem;
 }
 
 .footer-dark .btn-primary:hover {
@@ -779,9 +780,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #aaa;
-    font-size: 0.55rem;
-    letter-spacing: 1px;
+    color: #555;
+    font-size: 12px;
+    letter-spacing: 1.5px;
     text-transform: uppercase;
 }
 
