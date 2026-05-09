@@ -538,8 +538,7 @@ body {
 .project-content {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    gap: 10px;
+    justify-content: center;
 }
 
 .project-title {
