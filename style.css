@@ -771,16 +771,17 @@ body {
 /* Ornaments */
 .ornament {
     position: absolute;
-    width: 60px;
-    height: 60px;
-    opacity: 0.2;
+    width: 90px;
+    height: 90px;
+    opacity: 0.45;
     z-index: 1;
     pointer-events: none;
+    filter: drop-shadow(0 0 8px rgba(255,255,255,0.1));
 }
 
-.ornament-1 { left: 5%; top: 30%; transform: rotate(-15deg); }
-.ornament-2 { right: 8%; top: 40%; transform: rotate(15deg); }
-.ornament-3 { left: 15%; bottom: 20%; transform: rotate(10deg); }
+.ornament-1 { left: 6%; top: 25%; }
+.ornament-2 { right: 7%; top: 35%; }
+.ornament-3 { left: 12%; bottom: 18%; }
 
 .footer-bottom-dark {
     margin-top: 1rem;

@@ -192,29 +192,32 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     // Floating animation for Contact Ornaments
     gsap.to(".ornament-1", {
-        y: -20,
+        y: -25,
+        x: 8,
         rotation: -20,
-        duration: 4,
+        duration: 3.5,
         yoyo: true,
         repeat: -1,
         ease: "sine.inOut"
     });
     gsap.to(".ornament-2", {
-        y: 15,
-        rotation: 25,
-        duration: 5,
+        y: 20,
+        x: -10,
+        rotation: 20,
+        duration: 4.5,
         yoyo: true,
         repeat: -1,
         ease: "sine.inOut",
-        delay: 0.5
+        delay: 0.8
     });
     gsap.to(".ornament-3", {
-        y: -15,
-        rotation: 0,
-        duration: 3.5,
+        y: -18,
+        x: 12,
+        rotation: 15,
+        duration: 4,
         yoyo: true,
         repeat: -1,
         ease: "sine.inOut",
-        delay: 1
+        delay: 1.5
     });
 });
