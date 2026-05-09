@@ -306,15 +306,14 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 4px;
-    background-color: white;
-    padding: 4px 12px;
+    background-color: transparent;
+    padding: 3px 10px;
     border-radius: 20px;
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     font-family: var(--font-sans);
     font-weight: 600;
     color: var(--text-primary);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    border: 1px solid var(--border-color);
+    border: 1px solid rgba(0,0,0,0.08);
     margin-top: -12px;
     z-index: 2;
     letter-spacing: 0;
@@ -325,17 +324,16 @@ body {
 .section-badge {
     display: inline-flex;
     align-items: center;
-    gap: 6px;
-    background-color: white;
+    gap: 5px;
+    background-color: transparent;
     color: var(--text-primary);
     font-family: var(--font-sans);
-    font-size: 0.9rem;
+    font-size: 0.65rem;
     font-weight: 500;
-    padding: 8px 16px;
+    padding: 2px 8px;
     border-radius: 50px;
-    border: 1px solid var(--border-color);
-    margin-bottom: 20px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    border: 1px solid rgba(0,0,0,0.08);
+    margin-bottom: 5px;
 }
 
 /* Companies Section */
@@ -678,6 +676,12 @@ body {
 }
 
 /* Footer Section */
+.portfolio {
+    background: var(--bg-color);
+    position: relative;
+    padding-top: 30px;
+}
+
 .footer {
     background-color: #f7f6f2;
     text-align: center;
