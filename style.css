@@ -686,14 +686,15 @@ body {
 
 /* New Dark Footer/Contact Section */
 .footer-dark {
-    background-color: #1a1a1a;
+    background-color: #0d0d0d;
+    background-image: radial-gradient(circle at 50% -20%, rgba(123, 136, 82, 0.15), transparent 70%);
     color: #ffffff;
     text-align: center;
-    padding: 120px 5% 40px;
+    padding: 140px 5% 40px;
     position: relative;
     overflow: hidden;
-    border-radius: 40px 40px 0 0;
-    margin-top: 80px;
+    border-radius: 60px 60px 0 0;
+    margin-top: 100px;
 }
 
 .footer-dark .section-header {
@@ -770,12 +771,14 @@ body {
     padding-top: 30px;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    color: #666;
-    font-size: 0.9rem;
+    color: #444;
+    font-size: 0.75rem;
     position: relative;
     z-index: 2;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
 }
 
 .footer-bottom-dark p {
