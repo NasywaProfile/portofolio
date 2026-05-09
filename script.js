@@ -73,6 +73,15 @@ document.addEventListener("DOMContentLoaded", (event) => {
         );
     });
 
+    // Project Detail Page Entrance Animation
+    if (document.querySelector('.project-detail-page')) {
+        const detailTl = gsap.timeline({ defaults: { ease: "expo.out", duration: 1.2 } });
+        
+        detailTl.to(".project-header", { y: 0, opacity: 1, delay: 0.1 })
+                .to(".project-banner", { y: 0, opacity: 1 }, "-=0.9")
+                .to(".project-content-grid", { y: 0, opacity: 1 }, "-=0.9");
+    }
+
     // Staggered animation for tech stack logos
     gsap.fromTo(".company-logos .logo", 
         { y: 30, opacity: 0, scale: 0.9 },
