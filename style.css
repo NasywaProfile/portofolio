@@ -99,8 +99,12 @@ body {
     padding: 20px 5%;
     max-width: var(--container-width);
     margin: 0 auto;
-    position: relative;
-    z-index: 100;
+    position: sticky;
+    top: 0;
+    background-color: rgba(250, 249, 246, 0.85);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 1000;
 }
 
 .nav-links {
@@ -122,11 +126,10 @@ body {
     font-weight: 600;
 }
 
-.nav-contact {
-    text-decoration: none;
-    color: var(--text-primary);
+.nav-contact.btn-primary {
+    padding: 10px 25px;
     font-size: 0.95rem;
-    font-weight: 500;
+    color: white;
 }
 
 /* Hero Section */
