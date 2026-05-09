@@ -1005,6 +1005,7 @@ body {
     }
     .project-card {
         grid-template-columns: 1fr;
+        padding: 40px;
     }
     .project-visual {
         order: -1;
@@ -1097,12 +1098,19 @@ body {
     .project-card {
         grid-template-columns: 1fr;
         border-radius: 20px;
+        padding: 30px 20px;
+        min-height: auto;
     }
-    .project-info {
-        padding: 24px;
+    .project-content {
+        padding: 0;
+        text-align: center;
+        align-items: center;
     }
     .project-visual {
         height: 220px;
+    }
+    .project-title {
+        font-size: 1.6rem;
     }
 
     /* Companies */
