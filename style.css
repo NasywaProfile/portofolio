@@ -682,6 +682,13 @@ body {
     background: var(--bg-color);
     position: relative;
     padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+/* Gradient fade into contact section */
+.contact-wrapper {
+    background: linear-gradient(to bottom, var(--bg-color) 0%, transparent 100%);
+    padding-top: 20px;
 }
 
 /* New Dark Footer/Contact Section */

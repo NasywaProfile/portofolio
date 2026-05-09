@@ -154,6 +154,42 @@ document.addEventListener("DOMContentLoaded", (event) => {
             }
         });
     });
+
+    // Contact section: slide-up reveal like a new page entering
+    const footer = document.querySelector('.footer-dark');
+    if (footer) {
+        gsap.set(footer, { y: 80, opacity: 0, scale: 0.97 });
+        gsap.to(footer, {
+            scrollTrigger: {
+                trigger: footer,
+                start: "top 90%",
+                toggleActions: "play none none reverse"
+            },
+            y: 0,
+            opacity: 1,
+            scale: 1,
+            duration: 1.4,
+            ease: "expo.out"
+        });
+
+        // Stagger inner contact elements
+        const contactInner = footer.querySelectorAll('.available-badge, h2, p, .btn-primary');
+        gsap.set(contactInner, { y: 30, opacity: 0 });
+        gsap.to(contactInner, {
+            scrollTrigger: {
+                trigger: footer,
+                start: "top 80%",
+                toggleActions: "play none none reverse"
+            },
+            y: 0,
+            opacity: 1,
+            duration: 1.2,
+            ease: "expo.out",
+            stagger: 0.12,
+            delay: 0.2
+        });
+    }
+
     // Floating animation for Contact Ornaments
     gsap.to(".ornament-1", {
         y: -20,
