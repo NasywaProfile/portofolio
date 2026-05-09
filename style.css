@@ -701,7 +701,7 @@ body {
     min-height: 350px;
     width: 90%;
     max-width: 90%;
-    margin: 30px auto;
+    margin: 10px auto 30px;
     border-radius: 20px;
     overflow: hidden;
     display: flex;
