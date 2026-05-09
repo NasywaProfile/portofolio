@@ -1048,10 +1048,20 @@ body {
 
     /* Navbar */
     .nav-links {
-        display: none;
+        display: flex;
+        gap: 15px;
+    }
+    .nav-links a {
+        font-size: 0.8rem;
     }
     .navbar {
-        padding: 12px 5%;
+        width: 92%;
+        padding: 6px 6px 6px 18px;
+        margin: 15px auto;
+    }
+    .nav-contact.btn-primary {
+        padding: 8px 18px;
+        font-size: 0.75rem;
     }
 
     /* Hero */
@@ -1184,6 +1194,20 @@ body {
 
 /* --- Small Mobile (≤480px) --- */
 @media (max-width: 480px) {
+    .navbar {
+        padding: 5px 5px 5px 15px;
+        gap: 10px;
+    }
+    .nav-links {
+        gap: 12px;
+    }
+    .nav-links a {
+        font-size: 0.75rem;
+    }
+    .nav-contact.btn-primary {
+        padding: 7px 14px;
+        font-size: 0.7rem;
+    }
     .hero-title {
         font-size: 1.65rem;
     }
