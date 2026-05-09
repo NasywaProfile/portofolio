@@ -314,8 +314,8 @@ body {
     font-weight: 600;
     color: var(--text-primary);
     border: 1px solid rgba(0,0,0,0.08);
-    margin-bottom: -15px;
-    z-index: 2;
+    margin-top: -15px; /* Pulls it up over the photo */
+    z-index: 10; /* Ensures it is 'forward top' */
     letter-spacing: 0;
     line-height: 1;
     text-transform: lowercase;
