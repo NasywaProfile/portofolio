@@ -100,31 +100,35 @@ document.addEventListener("DOMContentLoaded", (event) => {
         }
     );
 
-    // Staggered premium animation for portfolio cards
-    gsap.utils.toArray('.project-card').forEach((card, i) => {
-        // Card entrance
-        gsap.fromTo(card, 
-            { opacity: 0, y: 60, scale: 0.96 },
-            {
+    // Stacking Card Effect for project cards
+    const cards = gsap.utils.toArray('.project-card');
+    const totalCards = cards.length;
+
+    cards.forEach((card, i) => {
+        // Set initial top offset per card to create stacking depth
+        const topOffset = 80 + i * 18;
+        gsap.set(card, { top: topOffset });
+
+        // Scale down cards behind as new ones stack on top
+        if (i < totalCards - 1) {
+            gsap.to(card, {
                 scrollTrigger: {
                     trigger: card,
-                    start: "top 85%",
-                    toggleActions: "play none none reverse"
+                    start: "top " + topOffset + "px",
+                    end: "+=400",
+                    scrub: true,
                 },
-                y: 0,
-                opacity: 1,
-                scale: 1,
-                duration: 1.2,
-                ease: "expo.out",
-                delay: i % 2 === 0 ? 0 : 0.15 // Slight delay for the second column
-            }
-        );
+                scale: 1 - (totalCards - i - 1) * 0.04,
+                filter: "brightness(0.85)",
+                ease: "none"
+            });
+        }
 
-        // Framer-style subtle image scale down on scroll (Parallax)
+        // Parallax image inside each card
         const img = card.querySelector('img');
-        if(img) {
-            gsap.fromTo(img, 
-                { scale: 1.15 },
+        if (img) {
+            gsap.fromTo(img,
+                { scale: 1.12 },
                 {
                     scrollTrigger: {
                         trigger: card,
@@ -138,6 +142,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
             );
         }
     });
+
 
     // Smooth Scrolling for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
