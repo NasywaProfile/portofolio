@@ -687,15 +687,15 @@ body {
 /* New Dark Footer/Contact Section */
 .footer-dark {
     background-color: #0d0d0d;
-    background-image: radial-gradient(circle at 50% 50%, rgba(123, 136, 82, 0.1), transparent 80%);
+    background-image: radial-gradient(circle at 50% 50%, rgba(123, 136, 82, 0.08), transparent 80%);
     color: #ffffff;
     text-align: center;
-    padding: 80px 5% 40px;
+    padding: 80px 5%;
     position: relative;
     overflow: hidden;
     border-radius: 60px;
-    margin: 40px 20px 20px;
-    min-height: calc(100vh - 60px);
+    margin: 40px 20px 40px;
+    min-height: 550px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -730,7 +730,7 @@ body {
 
 .footer-dark h2 {
     font-family: var(--font-serif);
-    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-size: clamp(2.5rem, 5vw, 3.8rem);
     line-height: 1.1;
     margin-bottom: 20px;
     color: #ffffff;
@@ -759,9 +759,9 @@ body {
 /* Ornaments */
 .ornament {
     position: absolute;
-    width: 120px;
-    height: 120px;
-    opacity: 0.6;
+    width: 80px;
+    height: 80px;
+    opacity: 0.3;
     z-index: 1;
     pointer-events: none;
 }
