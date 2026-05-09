@@ -265,7 +265,7 @@ body {
 .hero-floating-badge {
     position: absolute;
     right: 10%;
-    top: 30%; /* Moved up to avoid covering the subheading */
+    top: 40%; /* Balanced middle ground */
     background: var(--card-bg);
     padding: 15px 25px;
     border-radius: 50px;
