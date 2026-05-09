@@ -147,11 +147,11 @@ body {
 /* Hero Section */
 .hero {
     position: relative;
-    padding: 60px 5% 80px; /* Added some top padding back to balance it */
+    padding: 60px 5% 40px; /* Reduced bottom padding */
     max-width: var(--container-width);
     margin: 0 auto;
     text-align: center;
-    min-height: 85vh; /* Increased min-height to take up more vertical space */
+    min-height: 70vh; /* Reduced min-height to close the gap */
     display: flex;
     flex-direction: column;
     justify-content: center;
