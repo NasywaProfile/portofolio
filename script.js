@@ -119,7 +119,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
                     scrub: true,
                 },
                 scale: 1 - (totalCards - i - 1) * 0.04,
-                filter: "brightness(0.85)",
                 ease: "none"
             });
         }
