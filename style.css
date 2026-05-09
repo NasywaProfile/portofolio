@@ -147,7 +147,7 @@ body {
 /* Hero Section */
 .hero {
     position: relative;
-    padding: 0 5% 80px; /* Removed top padding to center better with the floating nav */
+    padding: 60px 5% 80px; /* Added some top padding back to balance it */
     max-width: var(--container-width);
     margin: 0 auto;
     text-align: center;
