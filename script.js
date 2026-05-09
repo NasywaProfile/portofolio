@@ -154,4 +154,31 @@ document.addEventListener("DOMContentLoaded", (event) => {
             }
         });
     });
+    // Floating animation for Contact Ornaments
+    gsap.to(".ornament-1", {
+        y: -20,
+        rotation: -20,
+        duration: 4,
+        yoyo: true,
+        repeat: -1,
+        ease: "sine.inOut"
+    });
+    gsap.to(".ornament-2", {
+        y: 15,
+        rotation: 25,
+        duration: 5,
+        yoyo: true,
+        repeat: -1,
+        ease: "sine.inOut",
+        delay: 0.5
+    });
+    gsap.to(".ornament-3", {
+        y: -15,
+        rotation: 0,
+        duration: 3.5,
+        yoyo: true,
+        repeat: -1,
+        ease: "sine.inOut",
+        delay: 1
+    });
 });
