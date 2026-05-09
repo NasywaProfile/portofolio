@@ -29,46 +29,57 @@
         <header class="project-header animate-up">
             <h1 class="project-title-large">IoT Monitoring & Web Dashboard</h1>
             <p class="project-subtitle">A comprehensive IoT system featuring real-time sensor data visualization through a responsive web dashboard connected to a MySQL database via REST APIs.</p>
-            
-            <div class="project-meta">
-                <div class="meta-item">
-                    <span>Role</span>
-                    <strong>Hardware & Web Integrator</strong>
-                </div>
-                <div class="meta-item">
-                    <span>Tech Stack</span>
-                    <strong>ESP32, MQTT, REST API, MySQL</strong>
-                </div>
-                <div class="meta-item">
-                    <span>Platform</span>
-                    <strong>Web & IoT Hardware</strong>
-                </div>
-            </div>
         </header>
 
         <div class="project-banner animate-up delay-1">
             <img src="assets/project_finance.png" alt="IoT Dashboard Project">
         </div>
 
-        <div class="project-body animate-up delay-2">
-            <div class="content-block">
-                <h3>Project Overview</h3>
-                <p>This project involved designing and deploying a Smart Fan IoT Dashboard that integrates hardware sensors via an ESP32 microcontroller with a responsive web interface. The primary objective was to enable real-time monitoring and remote control of environmental conditions directly from a web browser, bridging the gap between physical hardware and cloud data visualization.</p>
-            </div>
-            
-            <div class="content-block">
-                <h3>The Problem</h3>
-                <p>Traditional fan and environmental control systems lack intelligent, automated control based on real-time data, leading to energy inefficiency and suboptimal room comfort. Existing solutions were often closed ecosystems that didn't allow for custom dashboard integration or local database management.</p>
-            </div>
+        <div class="project-content-grid animate-up delay-2">
+            <aside class="project-sidebar">
+                <div class="meta-card">
+                    <span>Role</span>
+                    <strong>Hardware & Web Integrator</strong>
+                </div>
+                <div class="meta-card">
+                    <span>Duration</span>
+                    <strong>1 Month</strong>
+                </div>
+                <div class="meta-card">
+                    <span>Live Preview</span>
+                    <strong><a href="#" style="color:var(--text-primary);">View Project ↗</a></strong>
+                </div>
+                <div class="meta-card">
+                    <span>Tech Stack</span>
+                    <div class="tech-tags">
+                        <div class="tech-tag">ESP32</div>
+                        <div class="tech-tag">MQTT</div>
+                        <div class="tech-tag">REST API</div>
+                        <div class="tech-tag">MySQL</div>
+                    </div>
+                </div>
+            </aside>
 
-            <div class="content-block">
-                <h3>Design Decisions & Architecture</h3>
-                <p>The system leverages lightweight communication protocols for low-latency data transfer between the ESP32 hardware and the cloud. The frontend dashboard was built with a clean, modern aesthetic similar to this portfolio, using responsive design principles. Data is processed via a custom REST API and stored in a local MySQL database, which the frontend polls to display real-time metrics using interactive elements.</p>
-            </div>
+            <div class="project-body">
+                <div class="content-block">
+                    <h3>Project Overview</h3>
+                    <p>This project involved designing and deploying a Smart Fan IoT Dashboard that integrates hardware sensors via an ESP32 microcontroller with a responsive web interface. The primary objective was to enable real-time monitoring and remote control of environmental conditions directly from a web browser, bridging the gap between physical hardware and cloud data visualization.</p>
+                </div>
+                
+                <div class="content-block">
+                    <h3>The Problem</h3>
+                    <p>Traditional fan and environmental control systems lack intelligent, automated control based on real-time data, leading to energy inefficiency and suboptimal room comfort. Existing solutions were often closed ecosystems that didn't allow for custom dashboard integration or local database management.</p>
+                </div>
 
-            <div class="content-block">
-                <h3>Key Challenges</h3>
-                <p>One of the main challenges was ensuring reliable synchronization between the hardware state and the web dashboard without overwhelming the server with requests. This was mitigated by optimizing the API endpoints and implementing efficient local database queries.</p>
+                <div class="content-block">
+                    <h3>Design Decisions & Architecture</h3>
+                    <p>The system leverages lightweight communication protocols for low-latency data transfer between the ESP32 hardware and the cloud. The frontend dashboard was built with a clean, modern aesthetic similar to this portfolio, using responsive design principles. Data is processed via a custom REST API and stored in a local MySQL database, which the frontend polls to display real-time metrics using interactive elements.</p>
+                </div>
+
+                <div class="content-block">
+                    <h3>Key Challenges</h3>
+                    <p>One of the main challenges was ensuring reliable synchronization between the hardware state and the web dashboard without overwhelming the server with requests. This was mitigated by optimizing the API endpoints and implementing efficient local database queries.</p>
+                </div>
             </div>
         </div>
     </main>
