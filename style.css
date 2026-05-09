@@ -687,18 +687,20 @@ body {
 /* New Dark Footer/Contact Section */
 .footer-dark {
     background-color: #0d0d0d;
-    background-image: radial-gradient(circle at 50% 50%, rgba(123, 136, 82, 0.08), transparent 80%);
+    background-image: radial-gradient(circle at 50% 50%, rgba(123, 136, 82, 0.06), transparent 90%);
     color: #ffffff;
     text-align: center;
-    padding: 60px 5% 30px;
-    position: relative;
+    padding: 3vh 3%;
+    min-height: 350px;
+    max-width: 600px;
+    margin: 30px auto;
+    border-radius: 20px;
     overflow: hidden;
-    border-radius: 40px;
-    margin: 20px;
-    min-height: 450px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
 .footer-dark .section-header {
@@ -730,9 +732,9 @@ body {
 
 .footer-dark h2 {
     font-family: var(--font-serif);
-    font-size: clamp(2rem, 4vw, 3rem);
-    line-height: 1.1;
-    margin-bottom: 20px;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    line-height: 1.2;
+    margin-bottom: 1rem;
     color: #ffffff;
 }
 
@@ -759,9 +761,9 @@ body {
 /* Ornaments */
 .ornament {
     position: absolute;
-    width: 80px;
-    height: 80px;
-    opacity: 0.3;
+    width: 60px;
+    height: 60px;
+    opacity: 0.2;
     z-index: 1;
     pointer-events: none;
 }
@@ -771,15 +773,13 @@ body {
 .ornament-3 { left: 15%; bottom: 20%; transform: rotate(10deg); }
 
 .footer-bottom-dark {
-    margin-top: 40px;
-    padding-top: 20px;
+    margin-top: 1rem;
+    padding-top: 0.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #333;
-    font-size: 0.6rem;
-    position: relative;
-    z-index: 2;
+    color: #aaa;
+    font-size: 0.55rem;
     letter-spacing: 1px;
     text-transform: uppercase;
 }
