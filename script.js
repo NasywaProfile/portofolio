@@ -2,97 +2,132 @@ document.addEventListener("DOMContentLoaded", (event) => {
     // Register ScrollTrigger
     gsap.registerPlugin(ScrollTrigger);
 
-    // Initial Hero Animation
-    const heroTl = gsap.timeline();
-    
-    heroTl.to(".hero-title.animate-up", {
-        y: 0,
-        opacity: 1,
-        duration: 0.8,
-        ease: "power3.out"
-    })
-    .to(".hero-subtitle.animate-up", {
-        y: 0,
-        opacity: 1,
-        duration: 0.8,
-        ease: "power3.out"
-    }, "-=0.6")
-    .to(".hero-links.animate-up", {
-        y: 0,
-        opacity: 1,
-        duration: 0.8,
-        ease: "power3.out"
-    }, "-=0.6")
-    .to(".scroll-down.animate-up", {
-        y: 0,
-        opacity: 1,
-        duration: 0.8,
-        ease: "power3.out"
-    }, "-=0.4")
-    .fromTo(".hero-floating-badge", {
-        scale: 0,
+    // Initial Navbar Animation (Framer-like sticky dropdown effect)
+    gsap.from(".navbar", {
+        y: -50,
         opacity: 0,
-        rotation: 0
+        duration: 1.2,
+        ease: "expo.out",
+        delay: 0.1
+    });
+
+    // Initial Hero Animation
+    const heroTl = gsap.timeline({ defaults: { ease: "expo.out", duration: 1.5 } });
+    
+    // Framer style entrance (fade, slide up, and slight scale)
+    gsap.set(".hero-title, .hero-subtitle, .hero-links", { opacity: 0, y: 50, scale: 0.98 });
+    
+    heroTl.to(".hero-title", {
+        y: 0,
+        opacity: 1,
+        scale: 1,
+    }, "+=0.2")
+    .to(".hero-subtitle", {
+        y: 0,
+        opacity: 1,
+        scale: 1,
+    }, "-=1.3")
+    .to(".hero-links", {
+        y: 0,
+        opacity: 1,
+        scale: 1,
+    }, "-=1.3")
+    .fromTo(".hero-floating-badge", {
+        scale: 0.5,
+        opacity: 0,
+        rotation: -10
     }, {
         scale: 1,
         opacity: 1,
         rotation: 5,
-        duration: 1,
-        ease: "elastic.out(1, 0.5)"
-    }, "-=0.8");
+        duration: 1.5,
+        ease: "back.out(1.5)"
+    }, "-=1.2");
 
-    // Floating animation for badge
+    // Floating animation for badge (subtle hovering)
     gsap.to(".hero-floating-badge", {
-        y: -15,
-        duration: 2,
+        y: -10,
+        rotation: 8,
+        duration: 3,
         yoyo: true,
         repeat: -1,
         ease: "sine.inOut"
     });
 
-    // Scroll Animations for elements with .animate-up class
-    gsap.utils.toArray('.section-padding .animate-up, .companies .animate-up, .footer-content.animate-up').forEach(element => {
-        gsap.to(element, {
+    // Smooth reveal for sections
+    gsap.utils.toArray('.section-header, .footer-content').forEach(element => {
+        gsap.fromTo(element, 
+            { opacity: 0, y: 40, scale: 0.98 },
+            {
+                scrollTrigger: {
+                    trigger: element,
+                    start: "top 85%",
+                    toggleActions: "play none none reverse"
+                },
+                y: 0,
+                opacity: 1,
+                scale: 1,
+                duration: 1.2,
+                ease: "expo.out"
+            }
+        );
+    });
+
+    // Staggered animation for tech stack logos
+    gsap.fromTo(".company-logos .logo", 
+        { y: 30, opacity: 0, scale: 0.9 },
+        {
             scrollTrigger: {
-                trigger: element,
-                start: "top 85%",
+                trigger: ".company-logos",
+                start: "top 90%",
                 toggleActions: "play none none reverse"
             },
             y: 0,
             opacity: 1,
-            duration: 0.8,
-            ease: "power3.out"
-        });
-    });
+            scale: 1,
+            duration: 1,
+            stagger: 0.1,
+            ease: "back.out(1.2)"
+        }
+    );
 
-    // Staggered animation for achievement items
-    gsap.utils.toArray('.achievement-item').forEach((item, i) => {
-        gsap.to(item, {
-            scrollTrigger: {
-                trigger: ".achievement-list",
-                start: "top 80%"
-            },
-            y: 0,
-            opacity: 1,
-            duration: 0.6,
-            delay: i * 0.15,
-            ease: "power2.out"
-        });
-    });
-
-    // Staggered animation for portfolio cards
+    // Staggered premium animation for portfolio cards
     gsap.utils.toArray('.project-card').forEach((card, i) => {
-        gsap.to(card, {
-            scrollTrigger: {
-                trigger: ".portfolio-grid",
-                start: "top 80%"
-            },
-            y: 0,
-            opacity: 1,
-            duration: 0.6,
-            delay: i * 0.1,
-            ease: "power2.out"
-        });
+        // Card entrance
+        gsap.fromTo(card, 
+            { opacity: 0, y: 60, scale: 0.96 },
+            {
+                scrollTrigger: {
+                    trigger: card,
+                    start: "top 85%",
+                    toggleActions: "play none none reverse"
+                },
+                y: 0,
+                opacity: 1,
+                scale: 1,
+                duration: 1.2,
+                ease: "expo.out",
+                delay: i % 2 === 0 ? 0 : 0.15 // Slight delay for the second column
+            }
+        );
+
+        // Framer-style subtle image scale down on scroll (Parallax)
+        const img = card.querySelector('img');
+        if(img) {
+            gsap.fromTo(img, 
+                { scale: 1.15 },
+                {
+                    scrollTrigger: {
+                        trigger: card,
+                        start: "top bottom",
+                        end: "bottom top",
+                        scrub: 1
+                    },
+                    scale: 1,
+                    ease: "none"
+                }
+            );
+        }
     });
 
     // Smooth Scrolling for navigation links
