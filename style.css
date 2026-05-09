@@ -787,9 +787,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #555;
-    font-size: 12px;
-    letter-spacing: 1.5px;
+    color: #3a3a3a;
+    font-size: 9px;
+    letter-spacing: 2px;
     text-transform: uppercase;
 }
 
