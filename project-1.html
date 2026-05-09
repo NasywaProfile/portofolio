@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IoT Monitoring & Web Dashboard - Nasywa Davina</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#portfolio" class="active">Portofolio</a></li>
+        </ul>
+        <a href="index.html#contact" class="nav-contact btn-primary">Contact</a>
+    </nav>
+
+    <main class="project-detail-page section-padding">
+        <a href="index.html#portfolio" class="back-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+            Back to Projects
+        </a>
+        
+        <header class="project-header animate-up">
+            <h1 class="project-title-large">IoT Monitoring & Web Dashboard</h1>
+            <p class="project-subtitle">A comprehensive IoT system featuring real-time sensor data visualization through a responsive web dashboard connected to a MySQL database via REST APIs.</p>
+            
+            <div class="project-meta">
+                <div class="meta-item">
+                    <span>Role</span>
+                    <strong>Hardware & Web Integrator</strong>
+                </div>
+                <div class="meta-item">
+                    <span>Tech Stack</span>
+                    <strong>ESP32, MQTT, REST API, MySQL</strong>
+                </div>
+                <div class="meta-item">
+                    <span>Platform</span>
+                    <strong>Web & IoT Hardware</strong>
+                </div>
+            </div>
+        </header>
+
+        <div class="project-banner animate-up delay-1">
+            <img src="assets/project_finance.png" alt="IoT Dashboard Project">
+        </div>
+
+        <div class="project-body animate-up delay-2">
+            <div class="content-block">
+                <h3>Project Overview</h3>
+                <p>This project involved designing and deploying a Smart Fan IoT Dashboard that integrates hardware sensors via an ESP32 microcontroller with a responsive web interface. The primary objective was to enable real-time monitoring and remote control of environmental conditions directly from a web browser, bridging the gap between physical hardware and cloud data visualization.</p>
+            </div>
+            
+            <div class="content-block">
+                <h3>The Problem</h3>
+                <p>Traditional fan and environmental control systems lack intelligent, automated control based on real-time data, leading to energy inefficiency and suboptimal room comfort. Existing solutions were often closed ecosystems that didn't allow for custom dashboard integration or local database management.</p>
+            </div>
+
+            <div class="content-block">
+                <h3>Design Decisions & Architecture</h3>
+                <p>The system leverages lightweight communication protocols for low-latency data transfer between the ESP32 hardware and the cloud. The frontend dashboard was built with a clean, modern aesthetic similar to this portfolio, using responsive design principles. Data is processed via a custom REST API and stored in a local MySQL database, which the frontend polls to display real-time metrics using interactive elements.</p>
+            </div>
+
+            <div class="content-block">
+                <h3>Key Challenges</h3>
+                <p>One of the main challenges was ensuring reliable synchronization between the hardware state and the web dashboard without overwhelming the server with requests. This was mitigated by optimizing the API endpoints and implementing efficient local database queries.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer id="contact" class="footer section-padding">
+        <div class="footer-content animate-up">
+            <h2>Let's Collaborate</h2>
+            <p>Interested in my IoT and IT projects? Let's connect!<br>I'm always open to discussing new opportunities and technical challenges.</p>
+            <a href="mailto:naswa.wijaya31@gmail.com" class="btn-primary">Send an Email</a>
+        </div>
+        <div class="footer-bottom">
+            <p>©2025 Nasywa Davina. All Right Reserved</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

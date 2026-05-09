@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Diagnostics & Security - Nasywa Davina</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#portfolio" class="active">Portofolio</a></li>
+        </ul>
+        <a href="index.html#contact" class="nav-contact btn-primary">Contact</a>
+    </nav>
+
+    <main class="project-detail-page section-padding">
+        <a href="index.html#portfolio" class="back-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+            Back to Projects
+        </a>
+        
+        <header class="project-header animate-up">
+            <h1 class="project-title-large">Network Diagnostics & Security</h1>
+            <p class="project-subtitle">Conducted comprehensive network diagnostics, SSH port scanning, and analyzed firewall-related connectivity issues using terminal-based tools.</p>
+            
+            <div class="project-meta">
+                <div class="meta-item">
+                    <span>Role</span>
+                    <strong>Network Analyst</strong>
+                </div>
+                <div class="meta-item">
+                    <span>Tech Stack</span>
+                    <strong>Nmap, SSH, Port Scanning</strong>
+                </div>
+                <div class="meta-item">
+                    <span>Platform</span>
+                    <strong>Terminal / Command Line</strong>
+                </div>
+            </div>
+        </header>
+
+        <div class="project-banner animate-up delay-1">
+            <img src="assets/project_pet.png" alt="Network Diagnostics Project">
+        </div>
+
+        <div class="project-body animate-up delay-2">
+            <div class="content-block">
+                <h3>Project Overview</h3>
+                <p>An academic and practical project focused on identifying network vulnerabilities, auditing open ports, and diagnosing connectivity issues. Using tools like Nmap, the project mapped out the topology and security posture of targeted testing environments.</p>
+            </div>
+            
+            <div class="content-block">
+                <h3>The Problem</h3>
+                <p>Without proper auditing, local and remote networks can have unknowingly exposed services. Understanding exactly which ports are open and how firewalls are responding is crucial for maintaining a secure and reliable IT infrastructure.</p>
+            </div>
+
+            <div class="content-block">
+                <h3>Methodology</h3>
+                <p>The approach involved methodical port scanning to identify active services (like SSH, HTTP, etc.) and analyzing the responses. Firewall rules were then reviewed to ensure that only intended traffic could pass through, providing a safer network environment and detailed diagnostic reports.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer id="contact" class="footer section-padding">
+        <div class="footer-content animate-up">
+            <h2>Let's Collaborate</h2>
+            <p>Interested in my IoT and IT projects? Let's connect!<br>I'm always open to discussing new opportunities and technical challenges.</p>
+            <a href="mailto:naswa.wijaya31@gmail.com" class="btn-primary">Send an Email</a>
+        </div>
+        <div class="footer-bottom">
+            <p>©2025 Nasywa Davina. All Right Reserved</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

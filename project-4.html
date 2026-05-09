@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Application - Nasywa Davina</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#portfolio" class="active">Portofolio</a></li>
+        </ul>
+        <a href="index.html#contact" class="nav-contact btn-primary">Contact</a>
+    </nav>
+
+    <main class="project-detail-page section-padding">
+        <a href="index.html#portfolio" class="back-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+            Back to Projects
+        </a>
+        
+        <header class="project-header animate-up">
+            <h1 class="project-title-large">Responsive Web Application</h1>
+            <p class="project-subtitle">Designed and developed responsive web applications with robust front-end interfaces and back-end data handling for enhanced user interaction.</p>
+            
+            <div class="project-meta">
+                <div class="meta-item">
+                    <span>Role</span>
+                    <strong>Full-stack Web Developer</strong>
+                </div>
+                <div class="meta-item">
+                    <span>Tech Stack</span>
+                    <strong>HTML, CSS, JS, MySQL</strong>
+                </div>
+                <div class="meta-item">
+                    <span>Platform</span>
+                    <strong>Web Browsers</strong>
+                </div>
+            </div>
+        </header>
+
+        <div class="project-banner animate-up delay-1">
+            <img src="assets/project_skincare.png" alt="Responsive Web Project">
+        </div>
+
+        <div class="project-body animate-up delay-2">
+            <div class="content-block">
+                <h3>Project Overview</h3>
+                <p>A full-stack development project aimed at creating a modern, accessible, and responsive user interface for displaying dynamic content. The front-end was built using vanilla HTML, CSS, and JS, while the back-end relied on a structured MySQL database.</p>
+            </div>
+            
+            <div class="content-block">
+                <h3>The Problem</h3>
+                <p>Many legacy systems struggle with device responsiveness, meaning they break or become difficult to use on mobile phones and tablets. The objective was to build a system from scratch that is fluid and visually appealing regardless of screen size.</p>
+            </div>
+
+            <div class="content-block">
+                <h3>Design Decisions & Architecture</h3>
+                <p>Using CSS Grid and Flexbox, the UI components adjust dynamically. JavaScript handles client-side interactivity and asynchronous requests, creating a seamless experience without constant page reloads. The MySQL database was optimized for quick reads, ensuring that dynamic content loads swiftly.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer id="contact" class="footer section-padding">
+        <div class="footer-content animate-up">
+            <h2>Let's Collaborate</h2>
+            <p>Interested in my IoT and IT projects? Let's connect!<br>I'm always open to discussing new opportunities and technical challenges.</p>
+            <a href="mailto:naswa.wijaya31@gmail.com" class="btn-primary">Send an Email</a>
+        </div>
+        <div class="footer-bottom">
+            <p>©2025 Nasywa Davina. All Right Reserved</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
