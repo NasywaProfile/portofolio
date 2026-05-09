@@ -690,12 +690,12 @@ body {
     background-image: radial-gradient(circle at 50% 50%, rgba(123, 136, 82, 0.08), transparent 80%);
     color: #ffffff;
     text-align: center;
-    padding: 80px 5%;
+    padding: 60px 5% 30px;
     position: relative;
     overflow: hidden;
-    border-radius: 60px;
-    margin: 40px 20px 40px;
-    min-height: 550px;
+    border-radius: 40px;
+    margin: 20px;
+    min-height: 450px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -730,7 +730,7 @@ body {
 
 .footer-dark h2 {
     font-family: var(--font-serif);
-    font-size: clamp(2.5rem, 5vw, 3.8rem);
+    font-size: clamp(2rem, 4vw, 3rem);
     line-height: 1.1;
     margin-bottom: 20px;
     color: #ffffff;
@@ -771,13 +771,13 @@ body {
 .ornament-3 { left: 15%; bottom: 20%; transform: rotate(10deg); }
 
 .footer-bottom-dark {
-    margin-top: auto;
-    padding-top: 40px;
+    margin-top: 40px;
+    padding-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #333;
-    font-size: 0.65rem;
+    font-size: 0.6rem;
     position: relative;
     z-index: 2;
     letter-spacing: 1px;
