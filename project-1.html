@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Fan IoT System (Kipas-01) - Nasywa Davina</title>
+    <title>Smart Fan IoT System - Nasywa Davina</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,12 +21,12 @@
         </a>
         
         <header class="project-header animate-up">
-            <h1 class="project-title-large">Smart Fan IoT System (Kipas-01)</h1>
+            <h1 class="project-title-large">Smart Fan IoT System</h1>
             <p class="project-subtitle">An automated smart cooling system powered by ESP32 that adjusts to room temperature in real-time, featuring MQTT communication, cloud data logging via Supabase, and a web-based manual override.</p>
         </header>
 
         <div class="project-banner animate-up delay-1">
-            <img src="assets/project_finance.png" alt="Smart Fan IoT System">
+            <img src="assets/project_finance.png" alt="Smart Fan IoT System Project">
         </div>
 
         <div class="project-content-grid animate-up delay-2">
@@ -39,14 +39,13 @@
                     <span>Platform</span>
                     <strong>Hardware & Web Dashboard</strong>
                 </div>
-
                 <div class="meta-card">
                     <span>Tech Stack</span>
                     <div class="tech-tags">
                         <div class="tech-tag">ESP32</div>
                         <div class="tech-tag">DHT11 Sensor</div>
                         <div class="tech-tag">MQTT (HiveMQ)</div>
-                        <div class="tech-tag">Supabase</div>
+                        <div class="tech-tag">XAMPP</div>
                         <div class="tech-tag">JavaScript</div>
                     </div>
                 </div>
@@ -62,6 +61,7 @@
                     <h3>The Problem</h3>
                     <p>Traditional cooling fans require manual operation and lack environmental awareness, leading to inefficient energy use and inconsistent room comfort. Without a centralized data logging and remote control system, users cannot monitor temperature trends or manage the device from afar. A comprehensive IoT solution was needed to automate temperature regulation, provide reliable remote access, and systematically store historical telemetry data for future analysis.</p>
                 </div>
+
                 <div class="content-block">
                     <h3>Methodology</h3>
                     <p>Development began with assembling the hardware components (ESP32 and DHT11) and programming the temperature-based conditional logic. To achieve low-latency connectivity, MQTT protocol was implemented for seamless device-to-cloud communication. On the software side, Entity-Relationship Diagrams (ERD) were mapped out to structure the Supabase backend efficiently. Finally, JavaScript was utilized to integrate the web dashboard, ensuring that telemetry logs were accurately recorded and the manual override function executed commands instantaneously.</p>
