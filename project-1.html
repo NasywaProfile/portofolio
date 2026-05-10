@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IoT Monitoring & Web Dashboard - Nasywa Davina</title>
+    <title>Smart Fan IoT System (Kipas-01) - Nasywa Davina</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,32 +21,33 @@
         </a>
         
         <header class="project-header animate-up">
-            <h1 class="project-title-large">IoT Monitoring & Web Dashboard</h1>
-            <p class="project-subtitle">A comprehensive IoT system featuring real-time sensor data visualization through a responsive web dashboard connected to a MySQL database via REST APIs.</p>
+            <h1 class="project-title-large">Smart Fan IoT System (Kipas-01)</h1>
+            <p class="project-subtitle">An automated smart cooling system powered by ESP32 that adjusts to room temperature in real-time, featuring MQTT communication, cloud data logging via Supabase, and a web-based manual override.</p>
         </header>
 
         <div class="project-banner animate-up delay-1">
-            <img src="assets/project_finance.png" alt="IoT Dashboard Project">
+            <img src="assets/project_finance.png" alt="Smart Fan IoT System">
         </div>
 
         <div class="project-content-grid animate-up delay-2">
             <aside class="project-sidebar">
                 <div class="meta-card">
                     <span>Role</span>
-                    <strong>Hardware & Web Integrator</strong>
+                    <strong>IoT Developer / System Integrator</strong>
                 </div>
                 <div class="meta-card">
-                    <span>Duration</span>
-                    <strong>1 Month</strong>
+                    <span>Platform</span>
+                    <strong>Hardware & Web Dashboard</strong>
                 </div>
 
                 <div class="meta-card">
                     <span>Tech Stack</span>
                     <div class="tech-tags">
                         <div class="tech-tag">ESP32</div>
-                        <div class="tech-tag">MQTT</div>
-                        <div class="tech-tag">REST API</div>
-                        <div class="tech-tag">MySQL</div>
+                        <div class="tech-tag">DHT11 Sensor</div>
+                        <div class="tech-tag">MQTT (HiveMQ)</div>
+                        <div class="tech-tag">Supabase</div>
+                        <div class="tech-tag">JavaScript</div>
                     </div>
                 </div>
             </aside>
@@ -54,22 +55,16 @@
             <div class="project-body">
                 <div class="content-block">
                     <h3>Project Overview</h3>
-                    <p>This project involved designing and deploying a Smart Fan IoT Dashboard that integrates hardware sensors via an ESP32 microcontroller with a responsive web interface. The primary objective was to enable real-time monitoring and remote control of environmental conditions directly from a web browser, bridging the gap between physical hardware and cloud data visualization.</p>
+                    <p>This project involved designing and developing an automated cooling solution designated as "Kipas-01". It utilizes an ESP32 microcontroller paired with a DHT11 sensor to monitor environmental conditions. Hardware logic operates autonomously based on temperature, while data is transmitted in real-time via MQTT (HiveMQ). The backend features a well-structured database architecture, implementing robust one-to-many relationships in Supabase to securely log continuous sensor data. Additionally, a responsive web interface was developed using JavaScript to allow users to manually override the automated system.</p>
                 </div>
                 
                 <div class="content-block">
                     <h3>The Problem</h3>
-                    <p>Traditional fan and environmental control systems lack intelligent, automated control based on real-time data, leading to energy inefficiency and suboptimal room comfort. Existing solutions were often closed ecosystems that didn't allow for custom dashboard integration or local database management.</p>
+                    <p>Traditional cooling fans require manual operation and lack environmental awareness, leading to inefficient energy use and inconsistent room comfort. Without a centralized data logging and remote control system, users cannot monitor temperature trends or manage the device from afar. A comprehensive IoT solution was needed to automate temperature regulation, provide reliable remote access, and systematically store historical telemetry data for future analysis.</p>
                 </div>
-
                 <div class="content-block">
-                    <h3>Design Decisions & Architecture</h3>
-                    <p>The system leverages lightweight communication protocols for low-latency data transfer between the ESP32 hardware and the cloud. The frontend dashboard was built with a clean, modern aesthetic similar to this portfolio, using responsive design principles. Data is processed via a custom REST API and stored in a local MySQL database, which the frontend polls to display real-time metrics using interactive elements.</p>
-                </div>
-
-                <div class="content-block">
-                    <h3>Key Challenges</h3>
-                    <p>One of the main challenges was ensuring reliable synchronization between the hardware state and the web dashboard without overwhelming the server with requests. This was mitigated by optimizing the API endpoints and implementing efficient local database queries.</p>
+                    <h3>Methodology</h3>
+                    <p>Development began with assembling the hardware components (ESP32 and DHT11) and programming the temperature-based conditional logic. To achieve low-latency connectivity, MQTT protocol was implemented for seamless device-to-cloud communication. On the software side, Entity-Relationship Diagrams (ERD) were mapped out to structure the Supabase backend efficiently. Finally, JavaScript was utilized to integrate the web dashboard, ensuring that telemetry logs were accurately recorded and the manual override function executed commands instantaneously.</p>
                 </div>
             </div>
         </div>
